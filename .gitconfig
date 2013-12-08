@@ -1,0 +1,7 @@
+[color]
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+[commit]
+	template = ~/.gitmessage
