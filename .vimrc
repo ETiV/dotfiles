@@ -44,7 +44,7 @@ set tm=500
 
 
 " show location
-set cursorcolumn
+""set cursorcolumn
 set cursorline
 
 
@@ -76,9 +76,9 @@ set shiftround
 
 " indent
 set autoindent smartindent shiftround
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4                " insert mode tab and backspace use 4 spaces
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2                " insert mode tab and backspace use 2 spaces
 
 " NOT SUPPORT
 " fold
