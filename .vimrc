@@ -44,7 +44,7 @@ set tm=500
 
 
 " show location
-""set cursorcolumn
+"set cursorcolumn
 set cursorline
 
 
@@ -206,7 +206,7 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>w :w<CR>
 
 " select all
-map <Leader>sa ggVG"
+map <leader>sa ggVG"
 
 " remap U to <C-r> for easier redo
 nnoremap U <C-r>
