@@ -191,7 +191,7 @@ map <C-l> <C-W>l
 nnoremap <F2> :set nu! nu?<CR>
 nnoremap <F3> :set list! list?<CR>
 nnoremap <F4> :set wrap! wrap?<CR>
-set pastetoggle=<F5>            "    when in insert mode, press <F5> to go to
+set pastetoggle=<C-I>           "    when in insert mode, press <C-I> to go to
                                 "    paste mode, where you can paste mass data
                                 "    that won't be autoindented
 au InsertLeave * set nopaste
