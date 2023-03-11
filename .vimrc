@@ -133,6 +133,8 @@ endif
 " theme
 set background=dark
 colorscheme desert
+hi Search     cterm=bold ctermfg=white ctermbg=brown
+hi IncSearch  cterm=bold ctermfg=white ctermbg=darkgreen
 
 " set mark column color
 hi! link SignColumn   LineNr
