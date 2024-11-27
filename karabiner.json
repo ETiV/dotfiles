@@ -535,7 +535,9 @@
                     "mandatory": [
                       "option"
                     ],
-                    "optional": ["shift"]
+                    "optional": [
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
@@ -568,7 +570,9 @@
                     "mandatory": [
                       "option"
                     ],
-                    "optional": ["shift"]
+                    "optional": [
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
@@ -577,6 +581,72 @@
                     "modifiers": [
                       "control"
                     ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "(Remote Desktop) CMD-Left to Home along with shift",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "com\\.microsoft\\.rdc\\.mac"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "left_arrow",
+                  "modifiers": {
+                    "mandatory": [
+                      "command"
+                    ],
+                    "optional": [
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "home",
+                    "modifiers": []
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "(Remote Desktop) CMD-Right to End along with shift",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "com\\.microsoft\\.rdc\\.mac"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "right_arrow",
+                  "modifiers": {
+                    "mandatory": [
+                      "command"
+                    ],
+                    "optional": [
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "end",
+                    "modifiers": []
                   }
                 ],
                 "type": "basic"
@@ -599,7 +669,8 @@
                   "key_code": "open_bracket",
                   "modifiers": {
                     "mandatory": [
-                      "shift", "command"
+                      "shift",
+                      "command"
                     ]
                   }
                 },
@@ -607,7 +678,8 @@
                   {
                     "key_code": "open_bracket",
                     "modifiers": [
-                      "shift", "option"
+                      "shift",
+                      "option"
                     ]
                   }
                 ],
@@ -631,7 +703,8 @@
                   "key_code": "close_bracket",
                   "modifiers": {
                     "mandatory": [
-                      "shift", "command"
+                      "shift",
+                      "command"
                     ]
                   }
                 },
@@ -639,7 +712,8 @@
                   {
                     "key_code": "close_bracket",
                     "modifiers": [
-                      "shift", "option"
+                      "shift",
+                      "option"
                     ]
                   }
                 ],
@@ -703,7 +777,40 @@
                   {
                     "key_code": "delete_or_backspace",
                     "modifiers": [
-                      "control", "shift"
+                      "control",
+                      "shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "(Remote Desktop) Ctrl-R to Shift-F10",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "com\\.microsoft\\.rdc\\.mac"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "r",
+                  "modifiers": {
+                    "mandatory": [
+                      "control"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "f10",
+                    "modifiers": [
+                      "shift"
                     ]
                   }
                 ],
@@ -779,4 +886,3 @@
     }
   ]
 }
-
